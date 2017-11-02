@@ -1,0 +1,38 @@
+{
+  "name": "organised",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dougtq/organised.git",
+  "author": "Douglas Alves <douglas.expalves@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/babel pre-build/ --out-dir ./src/",
+    "dev": "./node_modules/.bin/babel-watch ./pre-build/index.js",
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "organiser": "^1.0.0",
+    "sequelize": "^4.22.0",
+    "tedious": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-node8-es6": "^12.0.0",
+    "babel-watch": "^2.0.7",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "standard": "^10.0.3"
+  }
+}
