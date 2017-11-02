@@ -1,0 +1,11 @@
+{
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-decorators-legacy",
+      "syntax-async-functions",
+      "transform-regenerator"
+    ],
+    "comments": false
+  }
