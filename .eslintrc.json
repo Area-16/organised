@@ -1,0 +1,6 @@
+{
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "presets": ["node8-es6"],
+  "plugin": ["transform-decorators-legacy"]
+}
