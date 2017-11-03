@@ -6,6 +6,7 @@
   "author": "Douglas Alves <douglas.expalves@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "precommit": "yarn build",
     "build": "./node_modules/.bin/babel pre-build/ --out-dir ./src/",
     "dev": "./node_modules/.bin/babel-watch ./pre-build/index.js",
     "start": "node ./server.js"
