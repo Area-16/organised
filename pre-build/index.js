@@ -1,9 +1,7 @@
 import { Server } from 'organiser'
-import { Hello } from './controllers/hello/hello'
-import { config } from 'dotenv'
-import { User } from './controllers/users/users'
+import { Hello } from './controllers/hello/'
+import { User } from './controllers/users/'
 
-config() // setting env vars
 const server = new Server({
   port: process.env.PORT,
   host: process.env.HOST,
