@@ -1,8 +1,7 @@
 import { INTEGER, STRING } from 'sequelize'
-import * as Db from '../database/'
+import { Connect } from '../database/'
 
-const Database = Db.default()
-const usuarios = Database.define('users', {
+const usuarios = Connect.define('users', {
   id: {
     type: INTEGER,
     primaryKey: true,
