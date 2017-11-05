@@ -6,8 +6,10 @@
   "author": "Douglas Alves <douglas.expalves@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "precommit": "yarn build",
-    "build": "rm -rf ./src && ./node_modules/.bin/babel pre-build/ --out-dir ./src/",
+    "clean": "rm -rf ./src",
+    "lint": "./node_modules/.bin/eslint pre-build/**/*.js",
+    "precommit": "yarn clean && yarn build",
+    "build": "yarn clean && ./node_modules/.bin/babel pre-build/ --out-dir ./src/",
     "dev": "./node_modules/.bin/babel-watch ./pre-build/index.js",
     "start": "node ./server.js"
   },
@@ -26,6 +28,7 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-node8-es6": "^12.0.0",
+    "babel-register": "^6.26.0",
     "babel-watch": "^2.0.7",
     "eslint": "^4.10.0",
     "eslint-config-standard": "^10.2.1",
